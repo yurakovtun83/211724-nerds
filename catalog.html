@@ -16,14 +16,72 @@
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="contacts">Контакты</a></li>
 			</ul>
-			<span class="cart">Корзина</span>	
+			<span class="cart"><a href="#">Корзина</a></span>
 		</nav>
 	</header>
 	
 	<main>
 		<h1>Магазин готовых шаблонов</h1>
 
-		<!-- Здесь будет форма -->
+		
+		<section class="filtr">
+			<h2 class="visually-hidden">Фильтр заказа</h2>
+			<form action="#" method="post">
+				<div class="filtr-cost">
+					<h3>Стоимость:</h3>
+					<input type="range" id="cost-input" min="0" max="15000">
+					<p>
+						от 0 до 15000
+					</p>								
+				</div>
+				<div class="filtr-grid">
+					<h3>Сетка:</h3>
+					<label>
+						<input type="radio" name="grid" value="adaptive" checked>
+						Адаптивная
+					</label>
+					<br>
+					<label>
+						<input type="radio" name="grid" value="static">
+						Фиксированная
+					</label>
+					<br>
+					<label>
+						<input type="radio" name="grid" value="liquid">
+						Резиновая
+					</label>
+				</div>
+				<div class="filtr-features">
+					<h3>Особенности:</h3>
+					<label>
+						<input type="checkbox" name="slider">
+						Слайдер
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="advantages">
+						Блок преимуществ
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="news">
+						Новости
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="gallery">
+						Галерея
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="cart">
+						Корзина
+					</label>
+				</div>
+				<input class="filtr-submit" type="submit" value="Показать">
+			</form>
+		</section>
+
 
 		<section class="catalog">
 			<h2 class="visually-hidden">Выбор шаблона</h2>
@@ -133,7 +191,17 @@
 
 	<section class="modal-write-us">
 		<h2>Напишите нам</h2>
-		<!-- Здесь будет форма -->
+		<form action="#" method="post"> 
+			<label for="user-name">Ваше имя:</label>
+			<input type="text" value="Представьтесь, пожалуйста" name="user-name" id="user-name">
+			<label for="email">Ваш e-mail:</label>
+			<input type="email" value="Для отправки ответа" name="email" id="email">
+			<br>
+			<label for="text">Текст письма:</label>
+			<textarea name="text" id="text">В свободной форме</textarea>
+			<br>
+			<input class="write-us-submit" type="submit" value="Отправить">
+		</form>
 		<span class="modal-close">x</span>
 	</section>
 
