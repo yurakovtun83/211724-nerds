@@ -116,12 +116,14 @@
 			</p>
 			<a class="button" href="#">Напишите нам</a>
 		</section>
-		<img class="map" src="img/map.png" width="1440" height="416" alt="Карта, как к нам добраться">
+		<p>
+			<img class="map" src="img/map.png" width="1440" height="416" alt="Карта, как к нам добраться">
+		</p>
 		<div class="footer-social">
 			<ul>
-				<li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
+				<li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+				<li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+				<li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
 			</ul>
 		</div>
 		<p>
@@ -134,18 +136,22 @@
 
 	<section class="modal-write-us">
 		<h2>Напишите нам</h2>
-		<form action="#" method="post"> 
-			<label for="user-name">Ваше имя:</label>
-			<input type="text" value="Представьтесь, пожалуйста" name="user-name" id="user-name">
-			<label for="email">Ваш e-mail:</label>
-			<input type="email" value="Для отправки ответа" name="email" id="email">
-			<br>
-			<label for="text">Текст письма:</label>
-			<textarea name="text" id="text">В свободной форме</textarea>
-			<br>
-			<input class="write-us-submit" type="submit" value="Отправить">
+		<form action="https://echo.htmlacademy.ru" method="post"> 
+			<p class="user-name">
+				<label for="user-name">Ваше имя:</label>
+				<input type="text" placeholder="Представьтесь, пожалуйста" name="user-name" id="user-name">
+			</p>
+			<p class="email">
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" placeholder="Для отправки ответа" name="email" id="email">
+			</p>
+			<p class="message">
+				<label for="message">Текст письма:</label>
+				<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="write-us-submit" type="submit">Отправить</button> 
 		</form>
-		<span class="modal-close">x</span>
+		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть форму</span></button>
 	</section>
 
 </body>

@@ -26,59 +26,73 @@
 		
 		<section class="filtr">
 			<h2 class="visually-hidden">Фильтр заказа</h2>
-			<form action="#" method="post">
-				<div class="filtr-cost">
-					<h3>Стоимость:</h3>
+			<form action="https://echo.htmlacademy.ru" method="get">
+				<fieldset class="filtr-cost">
+					<legend>Стоимость:</legend>
 					<input type="range" id="cost-input" min="0" max="15000">
 					<p>
 						от 0 до 15000
 					</p>								
-				</div>
-				<div class="filtr-grid">
-					<h3>Сетка:</h3>
-					<label>
-						<input type="radio" name="grid" value="adaptive" checked>
-						Адаптивная
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="grid" value="static">
-						Фиксированная
-					</label>
-					<br>
-					<label>
-						<input type="radio" name="grid" value="liquid">
-						Резиновая
-					</label>
-				</div>
-				<div class="filtr-features">
-					<h3>Особенности:</h3>
-					<label>
-						<input type="checkbox" name="slider">
-						Слайдер
-					</label>
-					<br>
-					<label>
-						<input type="checkbox" name="advantages">
-						Блок преимуществ
-					</label>
-					<br>
-					<label>
-						<input type="checkbox" name="news">
-						Новости
-					</label>
-					<br>
-					<label>
-						<input type="checkbox" name="gallery">
-						Галерея
-					</label>
-					<br>
-					<label>
-						<input type="checkbox" name="cart">
-						Корзина
-					</label>
-				</div>
-				<input class="filtr-submit" type="submit" value="Показать">
+				</fieldset>
+				<fieldset class="filtr-grid">
+					<legend>Сетка:</legend>
+					<ul>
+						<li>
+							<label>
+								<input class="visually-hidden" type="radio" name="grid" value="adaptive" checked>
+								Адаптивная
+							</label>
+						</li>
+						<li>
+							<label>
+								<input class="visually-hidden" type="radio" name="grid" value="static">
+								Фиксированная
+							</label>
+						</li>
+						<li>
+							<label>
+								<input class="visually-hidden" type="radio" name="grid" value="liquid">
+								Резиновая
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="filtr-features">
+					<legend>Особенности:</legend>
+					<ul>
+						<li>
+							<label>
+								<input class="visually-hidden" type="checkbox" name="slider" checked>
+								Слайдер
+							</label>
+						</li>
+						<li>
+							<label>
+								<input class="visually-hidden" type="checkbox" name="advantages">
+								Блок преимуществ
+							</label>
+						</li>
+						<li>
+							<label>
+								<input class="visually-hidden" type="checkbox" name="news" checked>
+								Новости
+							</label>
+						</li>
+						<li>
+							<label>
+								<input class="visually-hidden" type="checkbox" name="gallery">
+								Галерея
+							</label>
+						</li>
+						<li>
+							<label>
+								<input class="visually-hidden" type="checkbox" name="cart">
+								Корзина
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="filtr-submit" type="submit">Показать</button>
 			</form>
 		</section>
 
@@ -93,8 +107,8 @@
 					<li><button type="button">По названию</button></li>
 				</ul>
 				<ul class="sort-up-down">
-					<li><button type="button">По убыванию</button></li>
-					<li><button type="button">По возростанию</button></li>
+					<li><button type="button"><span class="visually-hidden">По убыванию</span></button></li>
+					<li><button type="button"><span class="visually-hidden">По возростанию</span></button></li>
 				</ul>
 			</div>
 			<div class="container">
@@ -102,7 +116,7 @@
 					<li class="item">
 						<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona - Информационный сайт для туристов">
 						<div class="popup">
-							<h3>Sedona</h3>
+							<h3><a class="modal-about-product" href="#">Sedona</a></h3>
 							<p>Информационный сайт для туристов</p>
 							<button class="button-buy" type="button">9 900 руб.</button>
 						</div>
@@ -110,7 +124,7 @@
 					<li class="item">
 						<img src="img/img-pink.jpg" width="360" height="576" alt="Pink app - Продуктовый лендинг приложения для iOS и Android">
 						<div class="popup">
-							<h3>Pink app</h3>
+							<h3><a class="modal-about-product" href="#">Pink app</a></h3>
 							<p>Продуктовый лендинг приложения для iOS и Android</p>
 							<button class="button-buy" type="button">9 900 руб.</button>
 						</div>
@@ -118,7 +132,7 @@
 					<li class="item">
 						<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop - Сайт салоны красоты. Для мужчин, да.">
 						<div class="popup">
-							<h3>Barbershop</h3>
+							<h3><a class="modal-about-product" href="#">Barbershop</a></h3>
 							<p>Сайт салоны красоты. Для мужчин, да.</p>
 							<button class="button-buy" type="button">9 900 руб.</button>
 						</div>
@@ -126,7 +140,7 @@
 					<li class="item">
 						<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka - Интернет - магазин вязаных игрушек">
 						<div class="popup">
-							<h3>Mishka</h3>
+							<h3><a class="modal-about-product" href="#">Mishka</a></h3>
 							<p>Интернет - магазин вязаных игрушек</p>
 							<button class="button-buy" type="button">9 900 руб.</button>
 						</div>
@@ -134,7 +148,7 @@
 					<li class="item">
 						<img src="img/img-aplus.jpg" width="360" height="576" alt="A plus - Лендинг курсов повышения квалификации">
 						<div class="popup">
-							<h3>A plus</h3>
+							<h3><a class="modal-about-product" href="#">A plus</a></h3>
 							<p>Лендинг курсов повышения квалификации</p>
 							<button class="button-buy" type="button">9 900 руб.</button>
 						</div>
@@ -142,7 +156,7 @@
 					<li class="item">
 						<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст - Промо - сайты производителя крафтового кваса">
 						<div class="popup">
-							<h3>Кваст</h3>
+							<h3><a class="modal-about-product" href="#">Кваст</a></h3>
 							<p>Промо - сайты производителя крафтового кваса</p>
 							<button class="button-buy" type="button">9 900 руб.</button>
 						</div>
@@ -173,12 +187,14 @@
 			</p>
 			<a class="button" href="#">Напишите нам</a>
 		</section>
-		<img class="map" src="img/map.png" width="1440" height="416" alt="Карта, как к нам добраться">
+		<p>
+			<img class="map" src="img/map.png" width="1440" height="416" alt="Карта, как к нам добраться">
+		</p>
 		<div class="footer-social">
 			<ul>
-				<li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Инстаграм</a></li>
+				<li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+				<li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+				<li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
 			</ul>
 		</div>
 		<p>
@@ -191,18 +207,22 @@
 
 	<section class="modal-write-us">
 		<h2>Напишите нам</h2>
-		<form action="#" method="post"> 
-			<label for="user-name">Ваше имя:</label>
-			<input type="text" value="Представьтесь, пожалуйста" name="user-name" id="user-name">
-			<label for="email">Ваш e-mail:</label>
-			<input type="email" value="Для отправки ответа" name="email" id="email">
-			<br>
-			<label for="text">Текст письма:</label>
-			<textarea name="text" id="text">В свободной форме</textarea>
-			<br>
-			<input class="write-us-submit" type="submit" value="Отправить">
+		<form action="https://echo.htmlacademy.ru" method="post"> 
+			<p class="user-name">
+				<label for="user-name">Ваше имя:</label>
+				<input type="text" placeholder="Представьтесь, пожалуйста" name="user-name" id="user-name">
+			</p>
+			<p class="email">
+				<label for="email">Ваш e-mail:</label>
+				<input type="email" placeholder="Для отправки ответа" name="email" id="email">
+			</p>
+			<p class="message">
+				<label for="message">Текст письма:</label>
+				<textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="write-us-submit" type="submit">Отправить</button> 
 		</form>
-		<span class="modal-close">x</span>
+		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть форму</span></button>
 	</section>
 
 </body>
