@@ -3,6 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
@@ -24,7 +27,7 @@
 		<h1 class="visually-hidden">Веб студия Nerds</h1>	
 
 		<div class="slider">
-			<ul>
+			<ul class="slider-list">
 				<li class="slider-1">
 					<p class="lead">Долго, дорого, скрупулезно</p>
 					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
@@ -63,11 +66,11 @@
 				</li>
 			</ul>
 		</section>
-
-		<section>
+		
+		<div class="container">
 			<section class="about-us">
 				<h2 class="visually-hidden">О нас</h2>
-				<p class="lead">Мы - маленькая, но гордая дизайн-студия из Краснодар.</p>
+				<p class="lead">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
 				<p><b>Выполняем заказы на разработку:</b></p>
 				<ul>
@@ -81,18 +84,18 @@
 				<table>
 					<caption>С 2004 года любим точность во всем:</caption>
 					<tr class="bold">
-						<td>146<span>%</span></td>
-						<td>100<span>%</span></td>
-						<td>50<span>%</span></td>
+						<td>146<span class="sup">%</span></td>
+						<td>100<span class="sup">%</span></td>
+						<td>50<span class="sup">%</span></td>
 					</tr>
-					<tr>
+					<tr class="lower">
 						<td>Уровень самоотдачи</td>
 						<td>Соблюдение сроков</td>
 						<td>Минимальная предоплата</td>
 					</tr>
 				</table>
 			</section>
-		</section>
+		</div>
 		<section class="partners">
 			<h2 class="visually-hidden">Наши партнеры</h2>
 			<ul class="partners-list">
@@ -106,7 +109,7 @@
 	
 	<footer class="main-footer">
 		<section class="contacts">
-			<h2>NЁRDS DESIGN STUDIO</h2>
+			<h2>Nёrds design studio</h2>
 			<p>
 				191186, Санкт-Петербург,<br>
 				ул. Б. Конюшенная, д. 19/8
@@ -131,7 +134,6 @@
 			Скидка 10% для друзей из социальных сетей.
 		</p>
 	</footer>
-
 	
 
 	<section class="modal-write-us">
